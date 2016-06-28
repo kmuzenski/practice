@@ -11,7 +11,32 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $ac
 $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
 //$statuses = $connection->get("search/tweets", ["q" => "clinton"]);
 
-/* print_r($statuses[0]->text);
+
+$response = [];
+
+foreach ($statuses as $key => $tweet) {
+	 array_push($response, $tweet->text);
+	 array_push($response, $tweet->created_at);
+	 array_push($response, $tweet->user->screen_name);
+}
+
+print_r($response[0]);
+
+print_r($response[1]);
+
+print_r($response[2]);
+
+print_r('<br><br><br>');
+
+
+
+
+
+print_r('<br><br><br>');
+print_r($response);
+
+/*
+print_r($statuses[0]->text);
 print_r('<br><br><br>');
 print_r($statuses[0]->created_at);
 print_r('<br><br><br>');
@@ -20,5 +45,5 @@ print_r('<br><br><br>');
 */
 
 
-echo json_encode($statuses);
+//echo json_encode($statuses);
 //print_r($statuses);
