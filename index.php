@@ -23,7 +23,7 @@ foreach ($statuses as $key => $tweet) {
 print_r($response[0]);
 
 print_r($response[1]);
-
+print_r('<br>');
 print_r($response[2]);
 
 print_r('<br><br><br>');
