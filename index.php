@@ -10,6 +10,6 @@ $access_token_secret = "HUsR4g0m6hqQwSVhv5QNsnV2Y0DufZQhinLqXdUn9OUlR";
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
 $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
 
-print_r($statuses[0][created_at]);
+print_r($statuses[0]{[created_at]});
 print_r('<br><br><br>');
 print_r($statuses);
