@@ -12,6 +12,6 @@ $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_
 
 print_r($statuses[0]->text);
 print_r('<br><br><br>');
-print_r($statuses[0][0]->screen_name);
+print_r($statuses[0]->[0]->screen_name);
 print_r('<br><br><br>');
 print_r($statuses);
