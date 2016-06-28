@@ -34,7 +34,7 @@ print_r($response);
 */
 
 
-print_r($statuses[0]->text);
+print_r([0]->text);
 print_r('<br><br><br>');
 /*print_r($statuses[0]->created_at);
 print_r('<br><br><br>');
