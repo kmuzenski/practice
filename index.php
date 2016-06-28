@@ -44,4 +44,4 @@ print_r('<br><br><br>');
 
 
 //echo json_encode($statuses);
-print_r($statuses);
+print_r($statuses[0]);
