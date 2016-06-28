@@ -31,7 +31,7 @@ print_r('<br><br><br>');
 print_r('<br><br><br>');
 print_r($response);
 
-*/
+
 
 
 print_r($statuses[0]->text);
@@ -41,6 +41,8 @@ print_r('<br><br><br>');
 print_r($statuses[0]->user->screen_name);
 print_r('<br><br><br>');
 
+*/
 
+print_r($statuses);
 
 //echo json_encode($statuses);
