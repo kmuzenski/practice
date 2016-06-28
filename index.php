@@ -14,6 +14,6 @@ print_r($statuses[0]->text);
 print_r('<br><br><br>');
 print_r($statuses[0]->created_at);
 print_r('<br><br><br>');
-print_r($statuses[0]->source);
+print_r($statuses[0]->source->user);
 print_r('<br><br><br>');
 print_r($statuses);
